@@ -1,226 +1,0 @@
-<!doctype html>
-<html lang="fa" dir="rtl">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>رزومه - مصطفی شبابی</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body>
-    <div id="root"></div>
-
-    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-
-    <script type="text/babel">
-    const { useState } = React;
-
-    function Resume() {
-      return (
-        <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 p-8" dir="rtl">
-          <div className="max-w-4xl mx-auto bg-white shadow-2xl rounded-lg overflow-hidden">
-
-            {/* Header Section */}
-            <div className="bg-gradient-to-l from-blue-600 to-blue-800 text-white p-8">
-              <h1 className="text-4xl font-bold mb-2">مصطفی شبابی</h1>
-              <p className="text-xl text-blue-100 mb-4">طراح و توسعه‌دهنده وب | تولیدکننده محتوا</p>
-
-              <div className="flex flex-wrap gap-4 text-sm">
-                <div className="flex items-center gap-2">
-                  <span>📞</span>
-                  <span>۰۹۳۹۲۸۷۳۸۲۶</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <span>✉️</span>
-                  <a href="mailto:Mostafa.shababi.2002@gmail.com" className="text-xs hover:underline">Mostafa.shababi.2002@gmail.com</a>
-                </div>
-                <div className="flex items-center gap-2">
-                  <span>📍</span>
-                  <span>تهران</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Main Content */}
-            <div className="p-8">
-
-              {/* Summary */}
-              <section className="mb-8">
-                <h2 className="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-blue-600">درباره من</h2>
-                <p className="text-gray-700 leading-relaxed">
-                  دانش‌آموخته مهندسی کامپیوتر با تجربه عملی در طراحی و توسعه وب، تولید محتوای ویژوال و پشتیبانی فنی. علاقه‌مند به یادگیری مستمر و ترکیب مهارت‌های تکنیکال با خلاقیت برای ایجاد تجربه‌های کاربری منحصربه‌فرد. آماده برای همکاری در پروژه‌های چالش‌برانگیز و یادگیری تکنولوژی‌های جدید.
-                </p>
-              </section>
-
-              {/* Education */}
-              <section className="mb-8">
-                <h2 className="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-blue-600 flex items-center gap-2">
-                  <span className="text-blue-600">🏆</span>
-                  تحصیلات
-                </h2>
-                <div className="space-y-4">
-                  <div className="bg-slate-50 p-4 rounded-lg">
-                    <h3 className="font-bold text-lg text-gray-800">کارشناسی ارشد مهندسی کامپیوتر - گرایش شبکه</h3>
-                    <p className="text-gray-600">دانشگاه علوم و تحقیقات | در حال تحصیل</p>
-                  </div>
-                  <div className="bg-slate-50 p-4 rounded-lg">
-                    <h3 className="font-bold text-lg text-gray-800">کارشناسی مهندسی کامپیوتر</h3>
-                    <p className="text-gray-600">دانشگاه شهر قدس</p>
-                  </div>
-                </div>
-              </section>
-
-              {/* Experience */}
-              <section className="mb-8">
-                <h2 className="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-blue-600 flex items-center gap-2">
-                  <span className="text-blue-600">🌐</span>
-                  تجربیات کاری و پروژه‌ها
-                </h2>
-                <div className="space-y-6">
-
-                  <div className="border-r-4 border-blue-500 pr-4">
-                    <h3 className="font-bold text-lg text-gray-800">تولید محتوای ویدیویی | بخش استودیو</h3>
-                    <p className="text-gray-600 text-sm mb-2">شرکت ضبط ویدیو آموزشی</p>
-                    <ul className="list-disc list-inside text-gray-700 space-y-1">
-                      <li>مدیریت و اجرای فرآیند ضبط ویدیوهای آموزشی در محیط استودیو</li>
-                      <li>همکاری با تیم تولید محتوا برای ایجاد محتوای با کیفیت</li>
-                      <li>آشنایی با تجهیزات و تکنیک‌های فیلمبرداری حرفه‌ای</li>
-                    </ul>
-                  </div>
-
-                  <div className="border-r-4 border-blue-500 pr-4">
-                    <h3 className="font-bold text-lg text-gray-800">توسعه‌دهنده وب | پروژه‌های شخصی</h3>
-                    <p className="text-gray-600 text-sm mb-2">فریلنس</p>
-                    <ul className="list-disc list-inside text-gray-700 space-y-1">
-                      <li>طراحی و توسعه دو وبسایت با استفاده از WordPress و کدنویسی دستی</li>
-                      <li>یادگیری و پیاده‌سازی HTML/CSS در پروژه‌های واقعی</li>
-                      <li>همکاری با سایر توسعه‌دهندگان و یادگیری بهترین شیوه‌های کدنویسی</li>
-                    </ul>
-                  </div>
-
-                  <div className="border-r-4 border-blue-500 pr-4">
-                    <h3 className="font-bold text-lg text-gray-800">همکار فیلمبرداری | پروژه تولید محتوا</h3>
-                    <p className="text-gray-600 text-sm mb-2">پروژه مستقل</p>
-                    <ul className="list-disc list-inside text-gray-700 space-y-1">
-                      <li>عکاسی و فیلمبرداری برای پروژه‌های تولید محتوا</li>
-                      <li>تدوین و پردازش نهایی ویدیوها با Premiere Pro و CapCut</li>
-                    </ul>
-                  </div>
-
-                  <div className="border-r-4 border-blue-500 pr-4">
-                    <h3 className="font-bold text-lg text-gray-800">تکنسین تعمیرات کامپیوتر</h3>
-                    <p className="text-gray-600 text-sm mb-2">مغازه تعمیرات</p>
-                    <ul className="list-disc list-inside text-gray-700 space-y-1">
-                      <li>عیب‌یابی و تعمیر سخت‌افزار و نرم‌افزار سیستم‌های کامپیوتری</li>
-                      <li>ارتباط مستقیم با مشتریان و ارائه راهکارهای فنی</li>
-                    </ul>
-                  </div>
-
-                </div>
-              </section>
-
-              {/* Skills */}
-              <section className="mb-8">
-                <h2 className="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-blue-600 flex items-center gap-2">
-                  <span className="text-blue-600">💻</span>
-                  مهارت‌های فنی
-                </h2>
-
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <h3 className="font-semibold text-gray-800 mb-3 text-lg">توسعه وب</h3>
-                    <div className="space-y-2">
-                      <div className="flex items-center justify-between">
-                        <span className="text-gray-700">HTML & CSS</span>
-                        <div className="w-32 bg-gray-200 rounded-full h-2">
-                          <div className="bg-blue-600 h-2 rounded-full" style={{width: '20%'}}></div>
-                        </div>
-                      </div>
-                      <div className="flex items-center justify-between">
-                        <span className="text-gray-700">WordPress</span>
-                        <div className="w-32 bg-gray-200 rounded-full h-2">
-                          <div className="bg-blue-600 h-2 rounded-full" style={{width: '10%'}}></div>
-                        </div>
-                      </div>
-                      <div className="flex items-center justify-between">
-                        <span className="text-gray-700">JavaScript <span className="text-xs text-blue-600">(در حال یادگیری)</span></span>
-                        <div className="w-32 bg-gray-200 rounded-full h-2">
-                          <div className="bg-blue-600 h-2 rounded-full" style={{width: '5%'}}></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div>
-                    <h3 className="font-semibold text-gray-800 mb-3 text-lg flex items-center gap-2">
-                      <span>📷</span>
-                      تولید محتوا
-                    </h3>
-                    <ul className="space-y-1 text-gray-700">
-                      <li>• Adobe Premiere Pro</li>
-                      <li>• Adobe Photoshop</li>
-                      <li>• CapCut</li>
-                      <li>• عکاسی و فیلمبرداری</li>
-                      <li>• تدوین ویدیو</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h3 className="font-semibold text-gray-800 mb-3 text-lg">دیگر مهارت‌ها</h3>
-                    <ul className="space-y-1 text-gray-700">
-                      <li>• تعمیرات سخت‌افزار و نرم‌افزار</li>
-                      <li>• مبانی شبکه‌های کامپیوتری</li>
-                      <li>• حل مسئله و عیب‌یابی</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h3 className="font-semibold text-gray-800 mb-3 text-lg flex items-center gap-2">
-                      <span>📈</span>
-                      تخصص‌های جانبی
-                    </h3>
-                    <ul className="space-y-1 text-gray-700">
-                      <li>• تحلیل بازارهای مالی (۱ سال تجربه)</li>
-                      <li>• مدیریت پروژه</li>
-                    </ul>
-                  </div>
-                </div>
-              </section>
-
-              {/* Soft Skills */}
-              <section>
-                <h2 className="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-blue-600">مهارت‌های نرم</h2>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                  <div className="bg-blue-50 p-3 rounded-lg text-center">
-                    <p className="font-semibold text-gray-800">یادگیری سریع</p>
-                  </div>
-                  <div className="bg-blue-50 p-3 rounded-lg text-center">
-                    <p className="font-semibold text-gray-800">کار تیمی</p>
-                  </div>
-                  <div className="bg-blue-50 p-3 rounded-lg text-center">
-                    <p className="font-semibold text-gray-800">خلاقیت</p>
-                  </div>
-                  <div className="bg-blue-50 p-3 rounded-lg text-center">
-                    <p className="font-semibold text-gray-800">انعطاف‌پذیری</p>
-                  </div>
-                </div>
-              </section>
-
-            </div>
-
-            {/* Footer */}
-            <div className="bg-gray-50 p-4 text-center text-gray-600 text-sm">
-              <p>آماده برای شروع فوری و همکاری در پروژه‌های جذاب</p>
-            </div>
-
-          </div>
-        </div>
-      );
-    }
-
-    const root = ReactDOM.createRoot(document.getElementById('root'));
-    root.render(<Resume />);
-    </script>
-  </body>
-</html>
